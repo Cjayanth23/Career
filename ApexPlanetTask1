@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+</head>
+<body style="background-color: turquoise;">
+  <h1>This is an Intership Webpage Application</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae cupiditate aspernatur quia inventore modi delectus ea dicta quam itaque necessitatibus voluptatum ipsam, nesciunt odio alias quae. Expedita, deserunt velit?</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAIYyC5rNpzP8nGx0xpl4VocvB-qPF2yaug&s" alt="Objects piled Up">
+  <a class="flex" href="https://pngtree.com/freebackground/vibrant-ellipses-creating-an-abstract-background-with-glitch-effect-distortion-texture_15219889.html" target="_blank"><img src="https://png.pngtree.com/thumb_back/fw800/background/20240102/pngtree-vibrant-and-distorted-abstract-wallpaper-a-glitch-effect-captures-random-color-image_13889422.png" alt="glitch image"></a>
+  <button class="flex" id="btn" onclick="alertmsg()">
+    click me!
+  </button>
+  <style>
+    h1{
+      text-align: center;
+    }
+    p{
+      width:30%;
+      text-align: justify;
+      color: red;
+    }
+    button{
+      color: beige;
+      background-color: tomato;
+      padding: 10px 15px;
+    }.flex{
+      display: flex;
+    }
+    #btn{
+      margin-top: 5px;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function alertmsg() {
+      alert("Alert shown Click me button is clicked");
+    }
+  </script>
+</body>
+</html>
