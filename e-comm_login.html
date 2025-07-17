@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E-Commerce</title>
+</head>
+<body> 
+    <div id="df">
+        <h1>LOGIN</h1>
+        <form id="loginForm" class="login">
+            <div id="log_form">
+                <input type="text" id="un" placeholder="UserName" required class="in2">
+                <input type="password" id="pw" placeholder="PassWord" required class="in2">
+            </div>
+            <br>
+            <button type="submit" class="sign">Login</button>
+            <div class="reg">
+                <p class="pp">Already a user?</p>
+                <a href="e-comm_reg.html" class="sign-in">Sign In</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // prevent default form submission
+            let username = document.getElementById("un").value.trim();
+            let password = document.getElementById("pw").value.trim();
+
+            if (username === "" || password === "") {
+                alert("Please fill in both username and password.");
+            } else {
+                alert(`Welcome back, ${username}! We're glad to see you again.`);
+                // Redirect to homepage
+                window.location.href = "e-commerce.html";
+            }
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url('AdobeStock_722559369_Preview (1).jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: rgb(246, 253, 237);
+        }
+        #log_form {
+            display: flex;
+            flex-direction: column;
+        }
+        #df {
+            position: fixed;
+            margin: 11% 40%;
+            border: solid rgba(49, 204, 238, 0.566);
+            border-radius: 10px;
+            border-width: 2px;
+            background-color: transparent;
+            backdrop-filter: blur(15px);
+            padding: 15px 30px;
+        }
+        .reg {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+        }
+        .login {
+            padding: 20px 10px;
+        }
+        .in2 {
+            margin-top: 7px;
+            border-radius: 9px;
+            background-color: transparent;
+            backdrop-filter: blur(25px);
+            border: solid greenyellow;
+            border-width: 0.5px;
+            padding: 9px 18px;
+            color: white;
+        }
+        .in2::placeholder {
+            color: red;
+            font-weight: bold;
+        }
+        .sign {
+            padding: 5px 7px;
+            font-weight: bold;
+            background-color: rgba(81, 63, 63, 0.162);
+            color: rgb(72, 234, 8);
+            cursor: pointer;
+        }
+        .sign:hover {
+            transform: translateY(-5px);
+            transition: .5s;
+        }
+        .pp {
+            color: rgb(51, 229, 245);
+        }
+        .sign-in {
+            color: rgb(100, 250, 67);
+        }
+    </style>
+</body>
+</html>
